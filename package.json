@@ -1,0 +1,23 @@
+{
+  "name": "hub-hook",
+  "version": "1.0.0",
+  "description": "for github webhook",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunikoro/hub-hook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunikoro/hub-hook/issues"
+  },
+  "homepage": "https://github.com/yunikoro/hub-hook#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "log4js": "^2.5.3"
+  }
+}

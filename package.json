@@ -4,7 +4,10 @@
   "description": "for github webhook",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pm2-start": "pm2 start ecosystem.config.js",
+    "pm2-stop": "pm2 stop ecosystem.config.js",
+    "pm2-restart": "pm2 restart ecosystem.config.js",
+    "pm2-reload": "pm2 reload ecosystem.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/yunikoro/hub-hook#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "log4js": "^2.5.3"
   }

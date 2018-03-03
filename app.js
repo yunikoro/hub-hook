@@ -9,8 +9,8 @@ var log4jsConfig = require('./log4js-config');
 
 var logger = log4js.getLogger();
 
-app.use('/utils', webhook);
 app.use(bodyParser.json());
+app.use('/utils', webhook);
 
 app.listen(9008, function () {
     logger.debug('app start');

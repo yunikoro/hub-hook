@@ -4,9 +4,19 @@ var log4js = require('log4js');
 
 var logger = log4js.getLogger();
 
+var child_process = require('child_process');
+
 router.all('/hook', function (req, res) {
     logger.debug('hook in');
-    res.json({ test: 'success' });
+    logger.debug(req);
+
+    child_process.execFile('../load.sh', [], { shell: true }, function (error, stdout, stderr) {
+        if(error) {
+            throw error;
+        }
+        logger.debug(stdout);
+    })
+
 });
 
 module.exports = router;

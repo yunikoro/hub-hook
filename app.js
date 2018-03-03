@@ -10,6 +10,6 @@ var logger = log4js.getLogger();
 app.use('/utils', webhook);
 
 app.listen(9008, function () {
-    console.log(arguments);
+    logger.debug('app start');
 });
 

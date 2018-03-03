@@ -6,8 +6,8 @@ module.exports = {
   apps : [
     {
       name      : 'Util-Hook',
-      script    : 'app',
-      watch     : true,
+      script    : 'app.js',
+      watch     : false,
       watch_options : {
         usePolling: true
       },

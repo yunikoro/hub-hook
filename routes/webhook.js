@@ -10,6 +10,8 @@ router.all('/hook', function (req, res) {
     logger.debug('hook in');
     logger.debug(req.body);
 
+    logger.debug(__dirname);
+
     child_process.execFile('../load.sh', [], { shell: true }, function (error, stdout, stderr) {
         if(error) {
             throw error;

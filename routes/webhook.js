@@ -16,7 +16,7 @@ router.all('/hook', function (req, res) {
         }
         logger.debug(stdout);
     })
-
+    res.json({status: 0});
 });
 
 module.exports = router;
